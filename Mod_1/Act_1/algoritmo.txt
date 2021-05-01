@@ -1,0 +1,16 @@
+// Esta actividad solicita crear un algoritmo que resuelva la produccion de un sandwich
+// He considerado como ejemplo la secuencia que sigue una importante cadena de sandwich.
+
+1.- Elegir pan
+2.- Abrir pan
+3.- Elegir tipo de carne
+4.- Poner carne en pan
+5.- Elegir queso
+6.- Poner queso
+7.- Calentar
+8.- Elegir verduras
+9.- Agregar verduras
+10.- Elegir aderezo de base
+11.- Poner aderezo al pan
+12.- Cerrar el pan
+13.- A disfutar!
