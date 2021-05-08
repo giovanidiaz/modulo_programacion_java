@@ -1,0 +1,128 @@
+//Calcular N numeros (cantidad ingresada por usuario) que sean numeros primos.
+
+Variables:
+- Int cantidad
+- Int numero = 0
+- Int Numaux
+- Int calculo
+- Int i
+- int aux
+
+Proceso:
+Escribir ("Cuantos numeros desea calcular?")
+Leer cantidad
+
+Para (i = 1; i <= cantidad; i++){
+Escribir ("Ingrese " . i . "Numero")
+Leer (numero)
+numaux = 2
+Si (numero > 1) {
+Mientras (Numaux < numero){
+calculo = numero % numaux
+Si (calculo == 0){
+Numaux = numero
+aux = 1
+}
+Fin Si
+Si (aux == 1 && numero > 2){
+Escribir ("El numero " . numero . "no es primo!")
+}
+Sino {
+Escribir ("El numero " . numero . "es primo")
+}
+Fin Si
+aux = 0
+Numaux++
+}Fin Mientras
+}
+Sino {
+Escribir ("El numero 1 no es primo, favor ingresar otro numero")
+}
+}Fin Para
+
+
+
+
+//Ejercicio 2
+
+
+Variables:
+- Int cantidad
+- int numero = 0
+- int acumulador = 0
+
+Proceso:
+Escribir ("Cuantos numeros desea calcular?")
+Leer cantidad
+
+Para (i = 1; i <= cantidad; i++){
+Escribir ("Ingrese " . i . "Numero")
+Leer (numero)
+calculo = numero % 2
+Si (calculo == 0){
+acumulador = acumulador + numero
+}
+Sino{
+Escribir ("Numero " . numero . "no es par")
+}
+Fin Si
+}fin para
+Escribir ("La suma de numeros pares ingresados es ". acumulador)
+
+
+
+----------------------------------------------------------------------
+
+// Ejercicio 3
+
+algoritmo que verifica si el numero ingresado es multiplo de 5 y lo agrega a un contador
+
+inicio
+
+integer num_tope
+integer num
+integer contador=0
+
+escribe("ingrese cuantos numeros desea ingresar")
+leer num_tope
+
+mientras num_tope>=0
+Escribe ("Ingresa tu numero")
+leer num
+
+si num%5==0
+
+contador=contador+1
+
+num_tope=num_tope-1
+fin mientras
+
+Escribe ("La cantidad de numeros ingresados multiplos de 5 es: " contador)
+fin
+
+------------------------------------------------------
+
+Ejercicio 4:
+
+int num
+int par
+int sumai
+int sumap
+
+Str op
+
+
+Suma=0
+Hacer
+Escribir “ingresar un numero par”
+Leer num
+par=num%2
+Si (par==0)
+Sumap=sumap+num
+Si no
+Sumai=sumai+num
+Fin si
+Escribir “Desea ingresar otro número s/n”
+Leer op
+mientras (op==s)
+escribir “la suma de los números pares ingresados es”,sumap, “y la de los impares es”,sumai
