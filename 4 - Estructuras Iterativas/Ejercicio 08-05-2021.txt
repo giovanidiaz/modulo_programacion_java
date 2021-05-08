@@ -126,3 +126,38 @@ Escribir “Desea ingresar otro número s/n”
 Leer op
 mientras (op==s)
 escribir “la suma de los números pares ingresados es”,sumap, “y la de los impares es”,sumai
+
+
+---------------------------
+
+Funcion: sumarParesMultiplicarImpares
+
+Variables: cantNumeros, numero, contadorPar=0, contadorImpar=0, SumaPar=0, Multi = 1 (integer)
+
+Escribir: "Ingrese cantidadNumeros ".
+Leer cantNumeros
+
+
+Para(i=1; i<=cantNumeros; i++) hacer
+
+Escribir: "Ingrese numero ".
+Leer numero
+
+Si numero mod 2 == 0 entonces
+SumaPar = SumaPar + numero
+contadorPar++
+Sino
+Multi = Multi * numero
+contadorImpar++
+FinSi
+
+finPara
+
+Escribir: "La sumaPar es ", SumaPar
+Escribir: "La Multiplicacion es ", Multi
+
+Segun contadorPar
+(>contadorImpar) Escribir: "cantidad de pares es mayor que impares: ", contadorPar, " ", contadorImpar
+(=contadorImpar) Escribir: "cantidad de pares es igual que impares: ", contadorPar, " ", contadorImpar
+(<contadorImpar) Escribir: "cantidad de pares es menor que impares: ", contadorPar, " ", contadorImpar
+Fin Segun
