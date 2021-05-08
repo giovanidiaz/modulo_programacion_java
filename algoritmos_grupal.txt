@@ -1,0 +1,47 @@
+// Cambiar ruedas de un vehiculo
+
+Asegurar posicion
+Montar gata
+Soltar pernos
+Elevar Neumatico
+Quitar pernos
+Desmontar Neumatico
+Montar nuevo Neumatico
+Fijar pernos
+Bajar gata
+Apretar pernos
+Quitar gata
+
+// Cambiar panal a bebe
+
+Preparar superfice
+Recostar bebe
+Quitar ropa exterior
+Quitar panal
+Limpiar bebe
+Aplicar talco
+Poner nuevo panal
+Poner ropa exterior
+Eliminar panal usado
+
+// Cambiar clave de correo electronico
+
+Iniciar sesion
+Ir a configuraciones
+Ingresar clave anterior     //Entrada
+Ingresar nueva clave        //Entrada
+
+Contraseña Cambiada 
+Cerrar sesion
+
+
+// Algoritmo compra en tienda virtual
+
+Selecciono producto
+Agrego al carro de compras
+Paso a completar compra
+Inicio sesion
+Ingreso direccion
+Ingreso informacion de facturacion
+Ingreso forma de pago
+Confirmo compra

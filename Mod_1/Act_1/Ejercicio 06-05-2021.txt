@@ -1,0 +1,172 @@
+Determinar si un numero es par o impar
+Variable
+·         Int numero
+·         Int resto
+ 
+Algorito
+Escribir “ingrese un numero”
+Leer numero
+Resto = mod(numero/2)
+Si (resto ==0) entonces
+Escribir “el numero”, numero, “es un numero par”
+Si no
+Escribir “el numero”, numero, “es un numero impar”
+ 
+Determinar si un múltiplo de dos
+Variable
+·         Int numero
+·         Int resto
+ 
+Algorito
+Escribir “ingrese un numero”
+Leer numero
+Resto = mod(numero/2)
+Si (resto ==0) entonces
+Escribir “el numero”, numero, “es un numero divisible por 2”
+Si no
+Escribir “el numero”, numero, “ no es un numero divisible por 2”
+ 
+Determinar si un múltiplo de 3
+Variable
+·         Int numero
+·         Int resto
+ 
+Algorito
+Escribir “ingrese un numero”
+Leer numero
+Resto = mod(numero/3)
+Si (resto ==0) entonces
+Escribir “el numero”, numero, “es un numero divisible por 3”
+Si no
+Escribir “el numero”, numero, “ no es un numero divisible por 3”
+ 
+Determinar cual es mayo de 2 números
+Variables
+Int numero 1
+Int numero 2
+Int diferencia
+ 
+Algoritmo
+Escribir “ingrese un numero”
+Leer numero1
+Escribir “ingrese un numero”
+Leer numero2
+ 
+Diferencia numero1-numero2
+Si diferencia >0 entonces
+Escribir “el numero mayor es”, numero1
+Fin si
+Si diferencia ==0
+Escribir “los números son iguales”
+Sino
+Escribir “el numero mayor es ”, numero 2
+Fin si
+ 
+Determinar cual es mayo de 2 números
+Variables
+Int numero 1
+Int numero 2
+Int diferencia
+ 
+Algoritmo
+Escribir “ingrese un numero”
+Leer numero1
+Escribir “ingrese un numero”
+Leer numero2
+ 
+Diferencia numero1-numero2
+Si diferencia >0 entonces
+Escribir “el número menor es”, numero2
+Fin si
+Si diferencia ==0
+Escribir “los números son iguales”
+Sino
+Escribir “el menor es ”, numero1
+Fin si
+
+Determinar si un numero es par o impar
+Variable
+·         Int numero
+·         Int resto
+ 
+Algorito
+Escribir “ingrese un numero”
+Leer numero
+Resto = mod(numero/2)
+Si (resto ==0) entonces
+Escribir “el numero”, numero, “es un numero par”
+Si no
+Escribir “el numero”, numero, “es un numero impar”
+ 
+Determinar si un múltiplo de dos
+Variable
+·         Int numero
+·         Int resto
+ 
+Algorito
+Escribir “ingrese un numero”
+Leer numero
+Resto = mod(numero/2)
+Si (resto ==0) entonces
+Escribir “el numero”, numero, “es un numero divisible por 2”
+Si no
+Escribir “el numero”, numero, “ no es un numero divisible por 2”
+ 
+Determinar si un múltiplo de 3
+Variable
+·         Int numero
+·         Int resto
+ 
+Algorito
+Escribir “ingrese un numero”
+Leer numero
+Resto = mod(numero/3)
+Si (resto ==0) entonces
+Escribir “el numero”, numero, “es un numero divisible por 3”
+Si no
+Escribir “el numero”, numero, “ no es un numero divisible por 3”
+ 
+Determinar cual es mayo de 2 números
+Variables
+Int numero 1
+Int numero 2
+Int diferencia
+ 
+Algoritmo
+Escribir “ingrese un numero”
+Leer numero1
+Escribir “ingrese un numero”
+Leer numero2
+ 
+Diferencia numero1-numero2
+Si diferencia >0 entonces
+Escribir “el numero mayor es”, numero1
+Fin si
+Si diferencia ==0
+Escribir “los números son iguales”
+Sino
+Escribir “el numero mayor es ”, numero 2
+Fin si
+ 
+Determinar cual es mayo de 2 números
+Variables
+Int numero 1
+Int numero 2
+Int diferencia
+ 
+Algoritmo
+Escribir “ingrese un numero”
+Leer numero1
+Escribir “ingrese un numero”
+Leer numero2
+ 
+Diferencia numero1-numero2
+Si diferencia >0 entonces
+Escribir “el número menor es”, numero2
+Fin si
+Si diferencia ==0
+Escribir “los números son iguales”
+Sino
+Escribir “el menor es ”, numero1
+Fin si
+

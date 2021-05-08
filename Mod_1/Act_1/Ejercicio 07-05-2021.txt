@@ -1,0 +1,18 @@
+
+// Funciones de Base
+void setup() {}
+void loop() {}
+
+// Ejercicios
+// Suma el acumulado de los N numeros, a partir de un numero ingresado por usuario.
+
+int calcula_suma(int numero)
+{
+    int suma = 0;
+    while (numero > 0)
+    {
+        suma += numero;
+        numero--;
+    }
+    return suma;
+}

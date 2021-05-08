@@ -1,0 +1,57 @@
+// Algoritmo en pseudocódigo:
+
+float monto_invertido = 1;
+float interes = 0.02;
+
+int meses = 1;
+
+float monto_acumulado = ((monto_invertido * interes) * meses) + monto_invertido;
+
+---------------------------------------------------
+inicio
+variables
+modelo,
+string;
+marca, string;
+
+escribe "ingrese modelo";
+leer = modelo;
+escribe "ingrese marca";
+leer = marca;
+
+escribe "la marca de su vehiculo es", marca;
+escribe "y el modelo es", modelo;
+
+Ejercicio 2
+numero,
+int;
+porcentaje, float;
+numerofinal, float;
+
+escribe "ingrese numero";
+leer = numero;
+escribe "ingrese porcentaje";
+leer = porcentaje;
+
+numerofinal = (numero * porcentaje) / 100
+
+escribe "El ",
+porcentaje, " de ", numero, " es ", numerofinal;
+
+Ejercicio 3
+inicio
+variables : sueldobase = float
+cantidadventas = integer
+comision = float
+totalsueldo = float
+
+Escribir “ingrese Sueldobase” leer = sueldobase
+escribir : “Ingrese cantidad de ventas “ leer = cantidadventas
+
+comision = cantidadventas * 10 %
+totalsueldo = sueldobase + comision
+
+Escribir "las comision de los meses es de " comision
+Escribir "y el sueldo total es de" totalsueldo
+
+fin

@@ -1,0 +1,72 @@
+// Estos son los tipos de datos para el algoritmo de ejercicio 2: Liquidacion de sueldo
+
+str nombre
+str apellido
+str rut
+str cargo
+str departamento
+str fecha de contrato
+int Sueldo bruto
+str sistema de salud
+int valor descuento  afp
+str tipo de contrato
+short cargas familiares
+int valor carga familiares
+int descuento
+int seguro de cesantía
+int seguro complementarios
+int bonificaciones
+int gratificaciones
+short horas extras
+int Valor hora extra
+int movilización
+int alimentación
+int zona
+int Sueldo Liquido
+str Datos de la empresa 
+
+
+
+// Estos son los procesos involucrados
+Datos de la empresa 
+Ingresar nombre
+Ingresar nombre
+Ingresar Rut
+Ingresar Cargo
+Ingresar Departamento
+Ingresar días trabajados
+Ingresar fecha de contrato
+Ingresar fecha de liquidación
+Ingresar el sueldo Bruto
+Sumar bonificaciones
+Sumar (valor carga familiar x Cargas familiares)
+Sumar (valor horas extras x horas extras)
+Sumar gratificaciones
+Sumar Alimentos
+Sumar zona
+Sumar movilización 
+Elegir Sistema de Salud
+Si Elige Fonasa descontar 7%
+Si no descontar valor contratado con la Isapre
+Descontar valor  descuento afp
+Descontar seguro cesantía
+Descontar otros descuentos
+Descontar seguros complementarios
+Sueldo Liquido
+
+
+
+//ACTIVIDAD 2
+
+Problematica: Contabilizar inventario de un refrigerador
+
+Requerimiento: Registrar productos que se ingresan en un refrigerador.
+
+Atributos de un producto: 
+double fecha de vencimiento
+double fecha de ingreso
+int cantidad
+String unidad_medida
+const nombre
+
+
