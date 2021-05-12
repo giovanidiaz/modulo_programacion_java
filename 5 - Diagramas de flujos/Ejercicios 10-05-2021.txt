@@ -1,0 +1,26 @@
+//Determinar el mayor de n numeros ingresados por usuario
+
+Escribir("Escribir el numero mayor de los numeros ingresados")
+flag = 1
+numero
+numeroMayor
+
+//Se define el primer numero como mayor, para futuras comparaciones
+Escribir ("ingrese Numero")
+leer numeroMayor
+
+hacer {
+Escribir("Ingrese siguiente Numero")
+Leer numero
+
+Si(numero > numeroMayor){
+numeroMayor = numero
+}
+
+Escribir("desea ingresar otro numero? (Si=1, No=2")
+Leer flag
+} mientras (flag == 1)
+
+Escribir("el numero mayor ingresado es: " . numeroMayor)
+
+

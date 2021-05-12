@@ -1,0 +1,33 @@
+Algoritmo que genera un descuento por compra de traje sobre 25000 del 15% todos los demas trajes descuenta solo un 8%
+
+int personas
+int valor
+escribir “ingresar cantidad de personas”
+leer personas
+si (personas<200) entonces
+valor=personas * 9500
+si no
+si(personas<300) entonces
+valor=personas * 8500
+si no
+valor=personas * 7500
+fin si
+escribir el valor del banquete es”, valor
+
+
+// EJERCICIO 2
+
+Escribir "Ingrese Kilos entregados a embarque"
+Leer kilos
+Escribir "Ingrese Si es tipo A o tipo B"
+Leer tipo
+Escribir "Ingrese tamaño si es 1 ó 2"
+Leer cal
+Segun (tipo=A )
+Si(cal=1) precio=kilos*(precioini+20)
+Sino precio=kilos*(precioini+30)
+Segun(tipo=B)
+Si(cal=1) precio=kilos*(precioini-30)
+Sino precio=kilos*(precioini-50)
+FinSegun
+Escribir "El productor recibirá: " precio "por sus" kilos
