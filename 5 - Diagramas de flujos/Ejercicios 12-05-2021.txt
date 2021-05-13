@@ -1,0 +1,129 @@
+Inicio
+
+char tip_Bus
+integer pasajeros
+integer pasj_min =20
+integer km
+integer viaje_tot
+integer cost_persona
+
+escribir("Ingrese tipo de bus en el que desea viajar (A B o C)")
+leer tip_bus
+escribir("Ingrese la cantidad de pasajeros")
+leer pasajeros
+escribir ("Ingrese la cantidad de kilometros del viaje")
+leer km
+
+si pasajeros<=0 escribir("La cantidad de pasajeros debe ser mayor a 0")
+
+segun tip_bus
+
+caso A si pasajeros>0 && pasajeros<20
+cost_persona=km*200
+viaje_tot=(pasj_min*cost_persona)/pasajeros
+
+sino si pasajeros>=20
+cost_persona=km*200
+viaje_tot=pasajeros*cost_persona
+
+fin si
+
+caso B si pasajeros>0 && pasajeros<20
+cost_persona=km*250
+viaje_tot=(pasj_min*cost_persona)/pasajeros
+
+sino si pasajeros>=20
+cost_persona=km*250
+viaje_tot=pasajeros*cost_persona
+
+fin si
+caso C si pasajeros>0 && pasajeros<20
+cost_persona=km*300
+viaje_tot=(pasj_min*cost_persona)/pasajeros
+
+sino si pasajeros>=20
+cost_persona=km*300
+viaje_tot=pasajeros*cost_persona
+
+fin si
+
+caso sino escribir("La opcion ingresada no es correcta")
+
+fin segun
+fin si
+
+escribir("el costo total de viaje es: " viaje_tot y el costo por persona es: cost_persona)
+
+fin
+
+
+-----
+
+
+Algoritmo NAUFRAGO_SATISFYER
+BURGER=0;
+CREDITO=0;
+C=0;
+P_BURGER=0;
+P_FINAL=0;
+DESCUENTO=0;
+Escribir "Qué ambuerguesa desea:"
+Escribir "Simple = 1"
+Escribir "Doble = 2"
+Escribir "Triple = 3"
+Leer BURGER;
+
+Segun BURGER Hacer
+1:
+P_BURGER=2000;
+Escribir "Cuantas hamburguesas desea?";
+Leer C;
+Escribir "Paga con tarjeta? 1=Si; 2=No";
+Leer CREDITO;
+Si (CREDITO==1)
+P_FINAL=C*P_BURGER;
+DESCUENTO=P_FINAL*0.05;
+P_FINAL=P_FINAL-DESCUENTO;
+Escribir "El valor de su pedido es: ",P_FINAL;
+SiNo
+P_FINAL=C*P_BURGER;
+Escribir "El valor de su pedido es: ",P_FINAL;
+FinSi
+2:
+P_BURGER=2500;
+Escribir "Cuantas hamburguesas desea?";
+Leer C;
+Escribir "Paga con tarjeta? 1=Si; 2=No";
+Leer CREDITO;
+Si (CREDITO==1)
+P_FINAL=C*P_BURGER;
+DESCUENTO=P_FINAL*0.05;
+P_FINAL=P_FINAL-DESCUENTO;
+Escribir "El valor de su pedido es: ",P_FINAL;
+SiNo
+P_FINAL=C*P_BURGER;
+Escribir "El valor de su pedido es: ",P_FINAL;
+FinSi
+3:
+P_BURGER=2800;
+Escribir "Cuantas hamburguesas desea?";
+Leer C;
+Escribir "Paga con tarjeta? 1=Si; 2=No";
+Leer CREDITO;
+Si (CREDITO==1)
+P_FINAL=C*P_BURGER;
+DESCUENTO=P_FINAL*0.05;
+P_FINAL=P_FINAL-DESCUENTO;
+Escribir "El valor de su pedido es: ",P_FINAL;
+SiNo
+P_FINAL=C*P_BURGER;
+Escribir "El valor de su pedido es: ",P_FINAL;
+FinSi
+De Otro Modo:
+Escribir "Ingrese una opción válida";
+Fin Segun
+
+FinAlgoritmo
+
+
+-------------------------------------------
