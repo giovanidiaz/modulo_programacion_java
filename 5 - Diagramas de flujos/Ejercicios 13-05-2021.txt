@@ -1,0 +1,23 @@
+
+int suma=0
+int prom
+int num
+int edad
+
+Escribir ("Ingrese la cantidad de edades que desea ingresar")
+leer num
+
+para (i=1,i==num, i++) hacer
+escribir ("ingrese las edades para ser sumadas")
+leer edad
+suma=suma+edad
+
+fin para
+
+prom=sum/num
+escribir("El promedio de edades es: ")
+
+fin
+
+
+
