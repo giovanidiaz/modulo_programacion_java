@@ -1,0 +1,117 @@
+package sesion_17_05_2021;
+
+import java.util.Scanner;
+
+// Repaso clase anterior
+//class Main {
+//	
+//	  public static void main(String[] args) {
+//	    Scanner data = new Scanner(System.in);  // Se crea el objeto data de la clase Scanner
+//	    System.out.println("ingrese texto");
+//
+//	    String texto = data.nextLine();  // Se lee la data ingresada y se almacena en variable
+//	    System.out.println("El texto ingresado es: " + texto);  // Output user input 
+//	  
+//	  }
+//}
+	  
+class Main {
+	
+	  public static void main(String[] args) {
+
+		  Scanner lectura = new Scanner(System.in);
+	        int opcion = 1;                         //Opción del Menú    
+	    
+	        do{
+	            System.out.println("--- MENU PRINCIPAL ---");
+	            System.out.println("1. Comparar Numeros");
+	            System.out.println("2. Ordenar Numeros");
+	            System.out.println("3. Operar Numeros");
+	            System.out.println("0. Salir");
+	            System.out.println("Ingrese opción: ");
+	            
+	            opcion = lectura.nextInt();
+	            
+	            if (opcion < 0 || opcion > 3){
+	                System.out.println("Opción inválida intente nuevamente");
+	            }
+	            else{
+	                switch(opcion){
+	                    case 1:
+	                        System.out.println(" COMPARAR NUMEROS ");
+	                        System.out.println("Ingrese primer numero");
+	                        int a = lectura.nextInt();
+	                        System.out.println("Ingrese segundo numero");
+	                        int b = lectura.nextInt();
+	                        comparaNumeros(a, b);
+	                        break;
+	                    case 2:
+	                        System.out.println(" NUMERO MAYOR ");
+	                        System.out.println("Ingrese primer numero");
+	                        int c = lectura.nextInt();
+	                        System.out.println("Ingrese segundo numero");
+	                        int d = lectura.nextInt();
+	                        System.out.println("Ingrese tercero numero");
+	                        int e = lectura.nextInt();
+	                        System.out.println("Ingrese cuarto numero");
+	                        int f = lectura.nextInt();
+	                        numeroMayor(c,d,e,f);
+	                        break;
+	                    case 3:
+	                        System.out.println(" OPERAR NUMEROS ");
+	                        System.out.println("Ingrese primer numero");
+	                        int g = lectura.nextInt();
+	                        System.out.println("Ingrese segundo numero");
+	                        int h = lectura.nextInt();
+	                        System.out.println("Ingrese operacion (suma 1 o resta 2)");
+	                        int i = lectura.nextInt();
+	                        operaNumeros(g,h,i);
+	                        System.out.println("-------------------------------");
+	                        break;
+	                    case 0:
+	                        System.out.println("Adiós!");
+	                        System.out.println("-------------------------------");
+	                        break;
+	                }
+	            }
+	        }while(opcion!=0);
+	  
+
+	}
+	  
+	  // Esta funcion compara entre 2 numeros
+	   private static void comparaNumeros(int A, int B) {
+	
+    	if (A > B) {
+    		System.out.println("El primer numero es mayor que el segundo");
+		}else if (B > A) {
+			System.out.println("El segundo numero es mayor que el primero");
+	    	}else {
+	    		System.out.println("Los numeros son iguales");	
+	    	}
+    	System.out.println("########################################################################");	
+
+	    }
+	   
+	    // Esta funcion compara entre un conjunto de numeros
+	   public static void numeroMayor(int C, int D, int E, int F ) {	
+		   // TODO
+	   }
+	   
+	   // Esta funcion opera dos numeros entre suma o resta
+	   public static void operaNumeros(int G, int H, int Operator) {
+	   int res = 0;
+	   
+	   if (Operator == 1) {
+		   res = G + H;
+		   System.out.println("El resultado es : " + res);
+	   }
+	   else if (Operator == 2) {
+	   res = G - H;
+	   System.out.println("El resultado es : " + res);
+	   }
+}
+	 
+	  
+
+}

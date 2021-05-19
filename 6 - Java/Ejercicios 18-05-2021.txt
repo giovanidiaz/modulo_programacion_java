@@ -1,0 +1,97 @@
+package sesion_18_05_2021;
+
+import java.util.Scanner;
+
+
+// Este código contiene el desarrollo para el cálculo del precio de la actividad solicitada.
+
+public class Main {
+
+	public static void main(String[] args) {
+		float minLlamada = 0;
+		int precioMin = 0;
+		int dia = 0;
+		short tipoTurno = 0;
+
+
+		Scanner lectura = new Scanner(System.in);
+		int opcion = 1;                         //Opción del Menú    
+
+		do{
+			System.out.println("--- MENU PRINCIPAL ---");
+			System.out.println("1. Calcula Precio Llamada");
+			System.out.println("0. Salir");
+			System.out.println("Ingrese opción: ");
+
+			opcion = lectura.nextInt();
+
+			if (opcion < 0 || opcion > 3){
+				System.out.println("Opción inválida intente nuevamente");
+			}
+			else{
+				switch(opcion){
+				case 1:
+					System.out.println(" CALCULA PRECIO LLAMADA ");
+					System.out.println("Ingrese numero de dia");
+					short a = lectura.nextShort();
+					System.out.println("Ingrese tipo de turno (Matutino 1 - Vespertino 2)");
+					short b = lectura.nextShort();
+					System.out.println("Ingrese cantidad de minutos");
+					float c = lectura.nextFloat();
+					calculaValor(a, b, c);
+					break;
+			       }
+            }
+        }while(opcion!=0);
+
+		
+	
+		}
+
+
+	// Esta función hace al cálculo del precio
+	static void calculaValor(short dia, short turno, float min) {
+		boolean domingo = false;
+		float impuesto = 0f;
+		float total = 0;
+		float tarifa = 0;
+
+		if(dia<7) {
+			domingo = false; 
+			if (turno == 1) {
+				impuesto = 0.15f;
+			} else if (turno == 2){
+				impuesto = 0.10f;
+			}
+		}else {
+			domingo = true;
+			impuesto = 0.03f;
+		}
+
+
+		if(min > 10) {
+			tarifa = 880 + (min-10)*50;
+		}else if (min <= 10 && min >= 8) {
+			tarifa = 740 + (min - 8 )* 70;
+
+		}else if (min <= 8 && min >= 5) {
+			tarifa = 500 + (min - 5 )* 80;
+
+		}else if (min <= 5 && min >= 0) {
+			tarifa = min * 100;
+		}
+
+		float precio = (tarifa * impuesto) + tarifa;
+		System.out.println("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+		System.out.print("XXXX   ");
+		System.out.print("Neto     : " + Math.round(tarifa));
+		System.out.println("\t\tXXXX");
+		System.out.print("XXXX   ");
+		System.out.print("Impuesto : " + Math.round(tarifa * impuesto));
+		System.out.println("\t\tXXXX");
+		System.out.print("XXXX   ");
+		System.out.print("Total    : " + Math.round(precio));
+		System.out.println("\t\tXXXX");
+		System.out.println("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+	}
+}
