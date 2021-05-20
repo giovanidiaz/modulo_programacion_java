@@ -1,0 +1,36 @@
+package sesion_19_05_2021;
+
+import java.util.Scanner;
+
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		//Ejercicio 1 - Mostrar los números del 1 al 100
+		System.out.println(" EJERCICIO 1 ");
+		int rango = 1;
+		System.out.print("Los numeros son: ");
+		while(rango< 100) {
+			System.out.print(rango);
+			System.out.print(" - ");
+			rango++;
+		}
+		System.out.println("");
+
+		//Ejercicio 2 - Mostrar los números pares hasta el numero que ingresa el usuario 
+		System.out.println(" EJERCICIO 2 ");
+		Scanner lectura = new Scanner(System.in);
+
+		System.out.println("Ingrese Número");
+
+		int numero = lectura.nextInt();
+		System.out.println("El número ingresado es : " + numero);
+
+		for(int i = 2; i<= numero; i=i+2) {
+			System.out.println(i);
+
+		}
+
+	}
+}
