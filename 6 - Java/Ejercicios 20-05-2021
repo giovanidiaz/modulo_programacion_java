@@ -1,0 +1,87 @@
+package sesion_20_05_2021;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		//Ejercicio 1 - Mostrar los números multipos de n ingresado por usuario, hasta el 100. 
+		System.out.println(" EJERCICIO 1 - Mostrar los números multipos de n ingresado por usuario, hasta el 100. ");
+		Scanner lectura = new Scanner(System.in);
+
+		System.out.println("Ingrese Número");
+
+		int numero = lectura.nextInt();
+		System.out.println("El número ingresado es : " + numero);
+
+		for(int i = 1; i<= 100; i++) {
+
+			if(i%numero == 0) {
+				System.out.println(i);
+			}
+		}
+
+		System.out.println("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+		System.out.println("");
+		//Ejercicio 2 
+		System.out.println(" EJERCICIO 2 - Calcular promedio de N notas ingresadas por usuario");
+		int nota = 1;
+		int sumNotas = 0;
+		int n = 0;
+
+
+		do {
+			System.out.print("Ingrese Nota o 0 para Salir : ");
+			nota = lectura.nextInt();
+			sumNotas += nota;
+			n++;
+
+		}while(nota !=0);
+		System.out.println("Total de Notas Ingresadas: " + (n-1));
+		System.out.println("Promedio de Notas " + sumNotas/(n-1));
+
+		
+		System.out.println("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+		System.out.println("");
+		
+		//Ejercicio 3 - Diferenciar entre par e impar
+		System.out.println(" EJERCICIO 3 - Diferenciar entre par e impar");
+		int sumNumeros = 0;
+		int countSumados = 0;
+		int multNumeros = 1;
+		int countMultiplicados = 0;
+		int num = 0;
+
+
+		do {
+			System.out.print("Ingrese numero o 0 para Salir : ");
+			num = lectura.nextInt();
+			if(num%2 == 0) {
+				sumNumeros += num;
+				System.out.println("El numero ingresado es par, se suma: " + num);
+				countSumados++;
+			}else if(num%2 != 0) {
+				multNumeros = num * multNumeros;
+				System.out.println("El numero ingresado es impar, se multiplica por: " + num);
+				countMultiplicados++;
+			}
+
+		}while(num !=0);
+		System.out.println("Total pares sumados: " + sumNumeros);
+		System.out.println("Total impares multiplicados: " + multNumeros);
+
+		System.out.println("Cantidad de pares: " + countSumados);
+		System.out.println("Cantidad de impares: " + countMultiplicados);
+
+		if(countSumados > countMultiplicados ) {
+			System.out.println("Cantidad de pares fue mayor");
+		}else if(countSumados < countMultiplicados ){
+			System.out.println("Cantidad de impares fue mayor");
+		}else {
+			System.out.println("Cantidad de impares y pares es la misma");
+		}
+	}
+}
+
+
