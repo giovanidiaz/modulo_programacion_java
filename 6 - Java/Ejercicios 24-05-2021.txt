@@ -1,0 +1,154 @@
+package sesion_24_05_2021;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Scanner lectura = new Scanner(System.in);
+		int opcion = 1;                         //Opción del Menú    
+
+
+		do{
+			System.out.println("--- MENU PRINCIPAL ---");
+			System.out.println("1. NUMERO DE LA SUERTE");
+			System.out.println("2. VALIDA HORA");
+			System.out.println("3. CALCULADORA");
+			System.out.println("0. Salir");
+			System.out.println("Ingrese opción: ");
+
+			opcion = lectura.nextInt();
+
+			if (opcion < 0 || opcion > 3){
+				System.out.println("Opción inválida intente nuevamente");
+			}
+			else{
+				switch(opcion){
+				case 1:
+					System.out.println("EJERCICIO 1 - NUMERO DE LA SUERTE");
+					numeroSuerte();
+					break;
+				case 2:
+					System.out.println("EJERCICIO 2 - VALIDA HORA");
+					validaHora();
+					break;
+				case 3:
+					System.out.println(" EJERCICIO 3 - CALCULADORA ");
+					System.out.println("Ingresa primer numero");
+					int n1 = lectura.nextInt();
+					System.out.println("Ingresa segundo numero");
+					int n2 = lectura.nextInt();
+					System.out.println("Define operacion :  suma 1 - resta 2 - multiplica 3 - division 4");
+					int o = lectura.nextInt();
+					operaNumeros(n1,n2,o);
+					System.out.println("-------------------------------");
+					break;
+				case 0:
+					System.out.println("Adiós!");
+					System.out.println("-------------------------------");
+					break;
+				}
+			}
+		}while(opcion!=0);
+
+	}
+	public static void numeroSuerte() {
+
+		//Ejercicio 1 - Sumar Fecha Ingresada - Numero de la Suerte
+		Scanner lectura = new Scanner(System.in);
+
+		System.out.println("Ingrese dia");
+		int day = lectura.nextInt();
+
+		System.out.println("Ingrese dia");
+		int month = lectura.nextInt();
+
+		System.out.println("Ingrese dia");
+		int year = lectura.nextInt();
+
+
+		System.out.println("Fecha ingresada " + day + "/" + month + "/"+ year);
+
+		int suma = day + month + year;
+
+
+		System.out.println("Suma Parcial : " + suma);
+		int decimal = 0;
+		int total = 0;
+		for(int i = 1; i<= 4; i++) {
+			//temp = temp/10;
+			decimal = suma%10;
+
+			System.out.println(decimal);
+			suma=suma/10;
+
+			total += decimal;
+		}
+
+		System.out.println("NUMERO DE LA SUERTE:" + total);
+	}
+
+
+	//Ejercicio 2 - Validar Hora
+	public static void validaHora() {
+
+		Scanner lectura = new Scanner(System.in);
+		System.out.println("Ingrese Hora");
+		int h = lectura.nextInt();
+		while(h>24 || h<0) {
+			System.out.println("Hora Incorrecta");
+			System.out.println("Ingrese Hora");
+			h = lectura.nextInt();
+		}
+		System.out.println("Ingrese Minutos");
+
+		int m = lectura.nextInt();
+		while(m>59 || m<0) {
+			System.out.println("Minutos Incorrectos");
+			System.out.println("Ingrese Minutos");
+			m = lectura.nextInt();
+		}
+
+		System.out.println("Ingrese Segundos");
+		int s = lectura.nextInt();
+		while(s>59 || m<0) {
+			System.out.println("Segundos Incorrectos");
+			System.out.println("Ingrese Segundos");
+			s = lectura.nextInt();
+		}
+
+
+		System.out.println("Hora Ingresada " + h + ":" + m + ":"+ s);
+	}
+
+
+
+
+	// Ejercicio 3 - Esta funcion opera dos numeros entre suma o resta
+	public static void operaNumeros(int G, int H, int Operator) {
+		int res = 0;
+
+		if (Operator == 1) {
+			res = G + H;
+			System.out.println("El resultado es : " + res);
+		}
+		else if (Operator == 2) {
+			res = G - H;
+			System.out.println("El resultado es : " + res);
+		}
+		else if (Operator == 3) {
+			res = G * H;
+			System.out.println("El resultado es : " + res);
+		}
+		else if (Operator == 4) {
+			if(H != 0) {
+				res = G / H;
+				System.out.println("El resultado es : " + res);
+			}else {
+				System.out.println("Divisor debe ser distinto de 0");
+				}
+		}
+	}
+}
+
