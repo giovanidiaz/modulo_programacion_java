@@ -1,0 +1,14 @@
+package sesion_26_05_2021;
+
+public class Device {
+
+	String brand;
+	String model;
+	int serial_number;
+	String part_number;
+	String version;
+	
+	
+}
+
+

@@ -1,0 +1,79 @@
+package sesion_25_05_2021;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void Main(String[] args) {
+
+		Scanner lectura = new Scanner(System.in);
+		int opcion = 1;                         //Opción del Menú    
+		int saldo, giro, abono;
+
+		do{
+			System.out.println("--- MENU PRINCIPAL ---");
+			System.out.println("1. CONSULTAR SALDO ");
+			System.out.println("2. HACER GIRO");
+			System.out.println("3. HACER ABONO");
+			System.out.println("0. Salir");
+			System.out.println("Ingrese opción: ");
+			saldo = saldoInicial();
+
+
+			opcion = lectura.nextInt();
+
+			if (opcion < 0 || opcion > 3){
+				System.out.println("Opción inválida intente nuevamente");
+			}
+			else{
+				switch(opcion){
+				case 1:
+					System.out.println("1. CONSULTAR SALDO ");
+					saldoInicial();
+					break;
+				case 2:
+					System.out.println("HACER GIRO");
+					girar(saldo);
+					break;
+				case 3:
+					System.out.println("HACER ABONO");
+					abonar(saldo);
+					System.out.println("-------------------------------");
+					break;
+				case 0:
+					System.out.println("Adiós!");
+					System.out.println("-------------------------------");
+					break;
+				}
+			}
+		}while(opcion!=0);
+
+	}
+
+	private static void abonar(int saldo) {
+		Scanner lectura = new Scanner(System.in);
+		System.out.println("Ingrese monto a abonar");
+		int abono = lectura.nextInt();
+		saldo = saldo + abono;
+		System.out.println("Su abono fue por: " + abono + " Su nuevo saldo es: " + saldo);
+
+	}
+
+	private static void girar(int saldo) {
+		Scanner lectura = new Scanner(System.in);
+		System.out.println("Ingrese monto a girar");
+		int giro = lectura.nextInt();
+		if(giro<saldo) {
+			saldo = saldo - giro;
+			System.out.println("Su giro fue por: " + giro + " Su nuevo saldo es: " + saldo);
+		}else {System.out.println("Saldo Insuficiente");}
+	}
+
+	public static int saldoInicial() {
+		Scanner lectura = new Scanner(System.in);
+		System.out.println("Ingrese saldo inicial");
+		int saldo = lectura.nextInt();
+		System.out.println("Ha iniciado su cuenta con: " + saldo);
+		return saldo;
+	}
+}

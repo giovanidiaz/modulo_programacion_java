@@ -1,0 +1,11 @@
+package sesion_26_05_2021;
+
+public class Account {
+
+	int id_field;
+	int id_sector;
+	int id_season;
+	int id_plant;
+	int value;
+	
+}
